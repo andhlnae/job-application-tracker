@@ -7,7 +7,7 @@ let jobs = [];
 
 // 3. Run this code when the form is submitted
 form.addEventListener("submit", function (event) {
-    event.preventDefault(); // Stop the page from relading
+    event.preventDefault(); // Stop the page from reloading and wipe out the data we just typed in
 
     // Build an object from what the user typed
     const job = {
