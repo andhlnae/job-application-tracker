@@ -26,7 +26,7 @@ main {
 #job-form {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.5rem; /* gap between form elements */
     background-color: #ffffff;
     padding: 1rem;
     border-radius: 8px;
@@ -36,13 +36,13 @@ main {
 #job-form input,
 #job-form select {
     flex: 1 1 200px;
-    padding: 0.5rem;
+    padding: 0.5rem; /* the space inside the input fields */
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
 #job-form button {
-  flex: 1 1 100%;
+  flex: 1 1 100%; /* the button takes full width on smaller screens */
   padding: 0.7rem;
   background-color: #cce6c0;
   color: white;
@@ -54,3 +54,39 @@ main {
 #job-form button:hover {
     background-color: #b4cba8;
 }
+
+#job-list {
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.job-card {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+    margin-bottom: 0.25rem;
+}
+
+.job-card p {
+    margin-bottom: 0.25rem;
+    color: #666;
+}
+
+status {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    color: white;
+}
+
+.status-applied { background-color: #3498db; }
+.status-interview { background-color: #f39c12; }
+.status-offer { background-color: #27ae60; }
+.status-rejected { background-color: #e74c3c; }
